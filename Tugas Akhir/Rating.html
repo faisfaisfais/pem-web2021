@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="jamrolex.js"></script>
+</head>
+<body>
+    <!--Start Header-->
+    <a name="atas">
+    <!--End Header-->
+            
+        <!--Start navbar-->
+        <center>
+          <div class="logo"><h1>Thoughts of Fais</h1></div>
+           <hr>
+              <div class="menu">
+                  <a href="home.html">Home</a> |
+                  <a href="about.html">About</a> |
+                  <a href="blog.html">Blog</a> |
+                  <a href="suggestions.php">Suggestions</a> |
+                  <a href="Rating.html">Rating</a>
+              </div>
+          <hr>
+      </center>
+      <!--End navbar-->
+
+        <br><br>
+
+        <center>
+            <div class="container">
+              <div class="post">
+                <div class="text">Thanks for rating us!</div>
+                <div class="edit">EDIT</div>
+              </div>
+              <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+                <form action="#">
+                  <header></header>
+                  <div class="textarea">
+                    <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                  </div>
+                  <div class="btn">
+                    <button type="submit">Post</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <script>
+              const btn = document.querySelector("button");
+              const post = document.querySelector(".post");
+              const widget = document.querySelector(".star-widget");
+              const editBtn = document.querySelector(".edit");
+              btn.onclick = ()=>{
+                widget.style.display = "none";
+                post.style.display = "block";
+                editBtn.onclick = ()=>{
+                  widget.style.display = "block";
+                  post.style.display = "none";
+                }
+                return false;
+              }
+            </script>
+        </center>
+
+        <br><br>
+
+        <!--Start footer-->
+        <hr>  
+            <div class="jam_digital">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+        <hr>
+        <br><br>
+        <p align="center"><b>Copyright @2022 Muhammad Faisal Zuhair</b></p>
+        <br><br>
+        <div class="footer">
+            <p align="center"><a href="#atas">&#128285</a></p>
+        </div>
+    <!--End footer-->
+</body>
+</html>
